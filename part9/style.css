@@ -1,0 +1,21 @@
+:root {
+  --main-color: tomato;
+}
+
+h2 {
+  background-color: var(--main-color);
+}
+
+p {
+  color: var(--main-color);
+}
+
+button {
+  border: solid 5pxvar (--main-color);
+}
+
+.test {
+  width: 200px;
+  height: 100px;
+  background-color: var(--main-color);
+}

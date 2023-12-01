@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  background-color: tomato;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row nowrap;
+  width: 800px;
+}
+
+.child {
+  height: 200px;
+  width: 250px;
+}
+
+.child1 {
+  /* flex-grow: 1; */
+  flex-shrink: 0;
+  order: 0;
+  background-color: aliceblue;
+}
+.child2 {
+  /* flex-grow: 1; */
+  flex-shrink: 1;
+  order: 0;
+  background-color: blueviolet;
+}
+.child3 {
+  flex-shrink: 2;
+  /* flex-grow: 2; */
+  order: 0;
+  background-color: aqua;
+}
+.child4 {
+  flex-shrink: 0;
+  background-color: blue;
+  order: 0;
+}
+
+/* @media screen and (max-width: 992px) {
+  .parent {
+    flex-direction: column;
+  }
+  .child {
+    width: 100%;
+  }
+} */

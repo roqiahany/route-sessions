@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: tomato;
+  flex-direction: row;
+}
+
+.item {
+  background-color: blue;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+img {
+  width: 100%;
+}
