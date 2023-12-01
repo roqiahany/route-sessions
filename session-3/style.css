@@ -1,0 +1,32 @@
+div {
+  width: 33.1%;
+  display: inline-block;
+  background-color: bisque;
+}
+img {
+  width: 100%;
+}
+.text {
+  text-align: center;
+}
+button {
+  width: 80px;
+  background-color: blue;
+}
+/* ####################### NOTES ################################# */
+/* if you select for one element many of classes do the same thing will take the last class you write it in file css */
+/* default background is transparent */
+/* 
+  /* ##text-align ## for text and photo and button not button */
+/*
+##display##
+display :block // i can control of size 
+display :inline // i can't control of size 
+display : inline block //  can control of size and can put of them side by side
+replaced element --> img input btn //i can control of size 
+non replace element --> anchor  // i can't control of size 
+*/
+/* 
+percentage "%" is resposable
+"px" is fixed size
+*/

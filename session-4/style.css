@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.item {
+  float: left;
+}
+div {
+  width: 30%;
+  /* float: left; */
+  background-color: bisque;
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+
+button {
+  width: 80px;
+  background-color: blue;
+}
+.clr {
+  clear: left;
+}
+.items {
+  background-color: blueviolet;
+  width: 100%;
+}
+#demo {
+  background-color: blueviolet;
+}
+.demo {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  margin: 250px 250px;
+  padding: 100px 50px;
+  border: 10px red solid;
+  font-size: 25px;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700px;
+}
+
+/*### CIRCLE ### */
+/* .line {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+} */
+.line {
+  width: 60px;
+  height: 120px;
+  border-radius: 60px;
+}
+.home {
+  height: 100vh;
+  background-color: black;
+
+  background-image: url('IMG_20220511_050309.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  /* background-size: contain; */
+  background-size: cover;
+}
+/* effect of ###################Float############### is continue and when you go out from the scope still doing effect
+so to delete this we can do some thing is #############clear################
+we add dev undar the last div toke float
+*/
+
+/* 
+##################Margin#####################
+with clock
+top right bottom left*/
+/* 
+##################Padding#####################
+with clock
+top right bottom left*/

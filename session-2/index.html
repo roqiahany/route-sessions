@@ -1,0 +1,107 @@
+<html>
+  <head></head>
+  <body>
+    <form>
+      <!-- 'for' and 'id' must be same -->
+      <!-- we must type name for input to store the value the user input it -->
+      <!-- input must take id , name , type, value -->
+      <!-- when you select method post the data of values will disappearing we do this to protected my data -->
+      <label for="name"> name </label>
+      <input
+        id="name"
+        autofocus
+        placeholder="Ex:roqa"
+        minlength="3"
+        maxlength="10"
+        type="text"
+        name="firstName"
+      />
+      <br />
+      <br />
+      <label for="age"> age </label>
+      <input
+        id="age"
+        readonly
+        value="20"
+        min="18"
+        max="60"
+        type="number"
+        name="age"
+      />
+      <br />
+      <br />
+      <label for="email"> email </label>
+      <input id="email" type="email" name="email" />
+      <br />
+      <br />
+      <label for="password"> password </label>
+      <input id="password" required type="password" name="password" />
+      <br />
+      <br />
+      <!-- //////////////Radio///////////// -->
+      <!-- to store one value in radio "female" or "male" we must type the same name for two input -->
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">female</label>
+      <br />
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">male</label>
+      <br />
+      <br />
+
+      <!-- //////////////CheckBox///////////// -->
+
+      <!-- to store one or more value in checkbox "html" or "css" or "js" we must type the same "name" for three input -->
+
+      <input
+        id="html"
+        checked
+        type="checkbox"
+        name="courses"
+        value="html"
+      /><label for="html">html</label>
+      <input id="css" type="checkbox" name="courses" value="css" /><label
+        for="css"
+        >css</label
+      >
+      <input type="checkbox" id="js" name="courses" value="js" /><label forjs
+        >js</label
+      >
+      <br />
+      <br />
+      <!-- //////////////select///////////// -->
+      <select name="gov">
+        <option selected disabled>choose one</option>
+        <option>Cairo</option>
+        <option>Alex</option>
+        <option>Aswan</option>
+      </select>
+      <br />
+      <br />
+      <!-- //////////////textarea///////////// -->
+      <textarea name="text" cols="30" rows="10"></textarea>
+      <br />
+      <br />
+      <!-- //////////////color///////////// -->
+      <input type="color" />
+      <br />
+      <br />
+      <!-- //////////////date///////////// -->
+
+      <input type="date" max="2024-12-30" min="2022-12-30" />
+      <br />
+      <br />
+      <!-- //////////////range///////////// -->
+
+      <input type="range" min="0" max="100" step="20" />
+      <br />
+      <br />
+      <!-- //////////////file///////////// -->
+      <input type="file" multiple />
+      <br />
+      <br />
+      <button type="submit">send</button>
+      <button type="reset">reset</button>
+      <!-- <input type="submit" value="send" /> -->
+    </form>
+  </body>
+</html>
