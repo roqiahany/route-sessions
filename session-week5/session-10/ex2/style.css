@@ -1,0 +1,11 @@
+header {
+  background-image: url(../400046700956_161359.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.icon {
+  /* background-color: tomato; */
+  width: 32px;
+  height: 32px;
+}
