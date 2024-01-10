@@ -1,3 +1,9 @@
+:root {
+  --main-color: #4726e1;
+}
+.main-text {
+  color: var(--main-color);
+}
 header {
   background-size: cover;
   background-position: center center;
@@ -8,4 +14,20 @@ header {
   /* background-color: tomato; */
   width: 32px;
   height: 32px;
+}
+
+.tittle h2 {
+  font-size: 80px;
+  font-weight: 900;
+  color: #f4f4f4;
+  letter-spacing: 5px;
+}
+.tittle h3 {
+  font-size: 40px;
+  font-weight: 900;
+  color: black;
+}
+
+#about {
+  background-image: url(../dots.png);
 }
