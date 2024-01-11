@@ -31,3 +31,56 @@ header {
 #about {
   background-image: url(../dots.png);
 }
+.img-item {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: solid 4px #f4f4f4;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+}
+
+.item-feedback h6 {
+  position: relative;
+}
+.item-feedback h6::after {
+  content: '';
+  width: 10%;
+  height: 2px;
+  background-color: #4726e1;
+  position: absolute;
+  top: 100%;
+  left: 45%;
+}
+
+.item-feedback {
+  border: solid 4px #f1f1f1;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-indent: 0%;
+}
+
+.img-feedback {
+  height: 50px;
+  border: solid 1px #f4f4f4;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
