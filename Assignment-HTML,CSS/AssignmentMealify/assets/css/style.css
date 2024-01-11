@@ -1,0 +1,118 @@
+:root {
+  /* colores */
+  --color-default: #212529;
+  --primary-hue: 0;
+  --primary-saturation: 84%;
+  --primary-lightness: 44%;
+  --color-primary: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    var(--primary-lightness)
+  );
+  --color-secondary: #37373f;
+  --color-tertiary: #7f7f90;
+  --light-hue: 0;
+  --light-saturation: 0%;
+  --light-lightness: 100%;
+  --color-light: hsl(
+    var(--light-hue),
+    var(--light-saturation),
+    var(--light-lightness)
+  );
+  --color-light-gray: #eee;
+
+  /* fonts */
+  --font-default: 'Open Sans', system-ui, -apple-system, 'Seogoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-primary: 'Amatic SC', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+  /* ^ Animation Options */
+  --animation-duration: 400ms;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-default);
+  color: var(--color-default);
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/****************** Repeated style ************************/
+
+.section-bg {
+  background-color: var(--color-light-grey);
+}
+
+.btn {
+  --border-width: 2px;
+  --border-radius: 0px;
+  --border-color: transparent;
+  --padding: 0.3125rem 0.75rem;
+  --background-color: transparent;
+  --hover-bg-color: transparent;
+  --hover-color: transparent;
+  --font-size: 1rem;
+  --color: var(--color-light);
+
+  padding: var(--padding);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--background-color);
+  color: var(--color);
+  font-size: var(--font-size);
+  cursor: pointer;
+  transition: background-color var(--animation-duration),
+    color var(--animation-duration);
+}
+
+.btn:hover {
+  background-color: var(--hover-bg-color);
+  color: var(--hover-color);
+}
+
+.container{
+  --padding:2.5rem 0.3125rem;
+  --margin-top:0;
+  --margin--bottom:0
+  width: 100%;
+  padding: var(--padding);
+  margin-top: var(--margin-top);
+  margin-bottom: var(--margin-q-bottom);
+  /* margin-left,right */
+  margin-inline: auto;
+
+}

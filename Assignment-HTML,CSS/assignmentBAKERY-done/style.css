@@ -1,0 +1,358 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+.home {
+  background-image: url('img/drew-hero.jpg');
+
+  height: 100vh;
+  background-size: 100% 100%;
+}
+
+/******************************************/
+/* HEADER */
+/******************************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202020;
+  height: 9.6rem;
+  padding: 0 12.8rem;
+  background-color: transparent;
+}
+.logo {
+  height: 4.2rem;
+}
+/******************************************/
+/* NAVIGATION */
+/******************************************/
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #e0dcd2;
+}
+/*****************************************/
+/* Hero section */
+/*****************************************/
+
+.center-text {
+  text-align: center;
+}
+
+.hero-text-box {
+  font-family: Alegreya;
+  width: 750px;
+  /* margin: auto auto;
+  max-width: 100%; */
+  margin: 19rem 42rem 30rem;
+}
+
+.hero-description-sm {
+  color: #ffffff;
+  font-size: 2.2rem;
+  padding-bottom: 2rem;
+}
+.heading-primary {
+  line-height: 1.2em;
+  font-size: 7.6rem;
+
+  color: #fff;
+  font-weight: 400;
+  padding-bottom: 3rem;
+}
+.hero-description-bg {
+  font-size: 2.4rem;
+  color: #fff;
+  padding-bottom: 3rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+
+  border-radius: 3px;
+
+  cursor: pointer;
+}
+.btn--full:link,
+.btn--full:visited {
+  margin-right: 1.5rem;
+  border: 3px solid rgb(142, 119, 84);
+  background-color: rgb(142, 119, 84);
+  color: #fff;
+}
+.btn--full:hover,
+.btn--full:active {
+  background-color: #fff;
+  color: #000;
+}
+.btn--outline:link,
+.btn--outline:visited {
+  border: 3px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+}
+.btn--outline:hover,
+.btn--outline:active {
+  border: 3px solid #fff;
+  background-color: #fff;
+  color: #000;
+}
+/******************************************/
+/* Who we are section */
+/******************************************/
+.section-who {
+  padding: 9.6rem 0;
+}
+.container {
+  padding: 0 16rem;
+}
+.margin-top--md {
+  margin-top: 6.4rem;
+}
+.step-text-box {
+  font-family: Alegreya;
+}
+.heading-tertiary {
+  font-size: 30px;
+  line-height: 41.4px;
+  font-family: Alegreya;
+  font-weight: 400;
+  text-decoration: none solid rgb(48, 48, 48);
+  color: #303030;
+  margin-bottom: 3.2rem;
+}
+.step-description {
+  color: #888888;
+  font-family: Alegreya;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 31.62px;
+  text-decoration: none solid rgb(136, 136, 136);
+  margin-bottom: 3.2rem;
+}
+.icon {
+  width: 80%;
+  border: 1px solid rgb(201, 199, 199);
+  border-radius: 50%;
+}
+.description {
+  color: rgb(101, 101, 101);
+  font-size: 1.7rem;
+  line-height: 1.8;
+}
+.gridsm {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  margin-bottom: 1.6rem;
+  align-items: center;
+}
+.step-img {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+
+  row-gap: 9.6rem;
+}
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6.4rem;
+}
+/******************************************/
+/*Our location section */
+/******************************************/
+.section-ourLocation {
+  padding: 9.6rem 0;
+  background-color: #f8f6f6;
+}
+
+/******************************************/
+/*Our Backing section */
+/******************************************/
+
+.section-OurBacking {
+  padding: 9.6rem 0 0 0;
+}
+
+.grid--3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2.6rem;
+}
+
+.margin-bottom-bg {
+  margin-bottom: 6.4rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.margin-bottom-sm {
+  margin-bottom: 3.2rem !important;
+}
+.backing-img {
+  width: 95%;
+  margin-bottom: 3.2rem !important;
+}
+
+/******************************************/
+/*Contact Information section */
+/******************************************/
+.icon2 {
+  width: 60%;
+  border: 1px solid rgb(201, 199, 199);
+  border-radius: 50%;
+  background-color: #8e7754;
+}
+.section-ContactInformation {
+  padding: 9.6rem 0;
+  background-color: #f8f8f8;
+}
+
+/******************************************/
+/*footer  */
+/******************************************/
+.footer {
+  padding: 6.4rem 0;
+
+  background-color: #403d38;
+}
+.grid--footer {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.heading-tertiary-footer {
+  font-size: 18px;
+  line-height: 32px;
+  font-family: Alegreya;
+  font-weight: 400;
+  text-decoration: none solid rgb(255, 255, 255);
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+}
+
+.step-description-footer {
+  color: #969696;
+  font-family: Alegreya;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 36px;
+  text-decoration: none solid rgb(150, 150, 150);
+  margin: 0 14px 0 0;
+}
+.About {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.arraw-icon {
+  height: 15px;
+}
+.contact-icon {
+  height: 30px;
+}
+.special-list {
+  display: flex;
+  align-items: center;
+}
+
+.borderBOTTOM {
+  border-bottom: 0.1px solid #969696;
+}
+.Contact-list {
+  display: flex;
+
+  border-bottom: 0.1px solid #969696;
+}
+.align-item-start {
+  align-items: start;
+}
+.Contact-list-last {
+  display: flex;
+}
+.align-item-center {
+  align-items: center;
+}
+
+.contactUL {
+  position: relative;
+}
+.contact-details-map:after {
+  content: '.';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-indent: -9999px;
+  background: url(img/contact-details-map.png) no-repeat center center;
+  opacity: 0.11;
+}
+
+/******************************************/
+/*logo */
+/******************************************/
+.logo2 {
+  padding: 6.4rem 0;
+  background-color: #353330;
+}
+.img-logo {
+  width: 400px;
+
+  padding-bottom: 30px;
+}
+.text-align-center {
+  text-align: center;
+}
+.icon3 {
+  width: 40px;
+  border: 1px solid #484540;
+  border-radius: 50%;
+  background-color: #484540;
+}
+.icon-logo {
+  display: flex;
+  flex-direction: row;
+  margin-left: 500px;
+  margin-top: 20px;
+  gap: 8px;
+}
+.textLogo {
+  color: #777777;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+}
