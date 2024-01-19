@@ -1,3 +1,7 @@
+/* ! root */
+:root {
+  font-size: 12px;
+}
 /* ! container */
 @media screen and (min-width: 1400px) {
   .container {
@@ -29,5 +33,39 @@
   .container {
     /* padding right , left */
     padding-inline: 15px;
+  }
+}
+
+/* ! header */
+@media screen and (min-width: 1200px) {
+  .container {
+    min-height: 100vh;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    flex-direction: column-reverse;
+
+    justify-content: center;
+  }
+  header .container > * {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  header .header-content {
+    margin-top: 30px;
+  }
+  header .btn-main {
+    --border-radius: 100vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header .buttons-groub {
+    flex-direction: column;
   }
 }

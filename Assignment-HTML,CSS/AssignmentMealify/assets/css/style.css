@@ -51,6 +51,7 @@ body {
 a,
 span {
   display: inline-block;
+  color: black;
 }
 
 a {
@@ -76,7 +77,7 @@ ul {
 /****************** Repeated style ************************/
 
 .section-bg {
-  background-color: var(--color-light-grey);
+  background-color: var(--color-light-gray);
 }
 
 .btn {
@@ -89,7 +90,6 @@ ul {
   --hover-color: transparent;
   --font-size: 1rem;
   --color: var(--color-light);
-
   padding: var(--padding);
   border: var(--border-width) solid var(--border-color);
   border-radius: var(--border-radius);
@@ -97,8 +97,15 @@ ul {
   color: var(--color);
   font-size: var(--font-size);
   cursor: pointer;
-  transition: background-color var(--animation-duration),
-    color var(--animation-duration);
+  transition: background-color var(--animation-duration),    color var(--animation-duration);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  -webkit-transition: background-color var(--animation-duration),    color var(--animation-duration);
+  -moz-transition: background-color var(--animation-duration),    color var(--animation-duration);
+  -ms-transition: background-color var(--animation-duration),    color var(--animation-duration);
+  -o-transition: background-color var(--animation-duration),    color var(--animation-duration);
 }
 
 .btn:hover {
@@ -117,4 +124,121 @@ ul {
   /* margin-left,right */
   margin-inline: auto;
 
+
 }
+
+.btn-main {
+ --background-color:var(--color-primary);
+ --border-radius: 0 100vh 100vh ;
+ --padding: .5rem 1.25rem;
+ --margin :.9375rem;
+ --hover-bg-color:hsl(
+  var(--primary-hue),
+  var(--primary-saturation),
+  calc(var(--primary-lightness) + 10%)
+ );
+ --hover-color:var(--color-light);
+}
+
+/* HEADER */
+header .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container > * {
+  width: 40%;
+}
+
+header .container picture img {
+  width: 100%;
+  filter:drop-shadow( 0px 0px 10px #0006);
+  -webkit-filter:drop-shadow( 0px 0px 10px #0006);
+}
+
+header .container picture img:hover {
+  animation: shake 1s infinite;
+  -webkit-animation: shake 1s infinite;
+}
+@keyframes shake {
+  0%{ transform: translate(1px ,1px) rotate(0deg); -webkit-transform: translate(1px ,1px) rotate(0deg); -moz-transform: translate(1px ,1px) rotate(0deg); -ms-transform: translate(1px ,1px) rotate(0deg); -o-transform: translate(1px ,1px) rotate(0deg);
+}
+  10%{ transform: translate(-1px ,-2px) rotate(-1deg); -webkit-transform: translate(-1px ,-2px) rotate(-1deg); -moz-transform: translate(-1px ,-2px) rotate(-1deg); -ms-transform: translate(-1px ,-2px) rotate(-1deg); -o-transform: translate(-1px ,-2px) rotate(-1deg); }
+  20%{ transform: translate(-3px ,0px) rotate(1deg); -webkit-transform: translate(-3px ,0px) rotate(1deg); -moz-transform: translate(-3px ,0px) rotate(1deg); -ms-transform: translate(-3px ,0px) rotate(1deg); -o-transform: translate(-3px ,0px) rotate(1deg); }
+  30%{ transform: translate(3px ,2px) rotate(0deg); -webkit-transform: translate(3px ,2px) rotate(0deg); -moz-transform: translate(3px ,2px) rotate(0deg); -ms-transform: translate(3px ,2px) rotate(0deg); -o-transform: translate(3px ,2px) rotate(0deg); }
+  40%{ transform: translate(1px ,-1px) rotate(1deg); -webkit-transform: translate(1px ,-1px) rotate(1deg); -moz-transform: translate(1px ,-1px) rotate(1deg); -ms-transform: translate(1px ,-1px) rotate(1deg); -o-transform: translate(1px ,-1px) rotate(1deg); }
+  50%{ transform: translate(-1px ,2px) rotate(-1deg); -webkit-transform: translate(-1px ,2px) rotate(-1deg); -moz-transform: translate(-1px ,2px) rotate(-1deg); -ms-transform: translate(-1px ,2px) rotate(-1deg); -o-transform: translate(-1px ,2px) rotate(-1deg); }
+  60%{ transform: translate(-3px ,1px) rotate(0deg); -webkit-transform: translate(-3px ,1px) rotate(0deg); -moz-transform: translate(-3px ,1px) rotate(0deg); -ms-transform: translate(-3px ,1px) rotate(0deg); -o-transform: translate(-3px ,1px) rotate(0deg); }
+  70%{ transform: translate(3px ,1px) rotate (-1deg); -webkit-transform: translate(3px ,1px) rotate (-1deg); -moz-transform: translate(3px ,1px) rotate (-1deg); -ms-transform: translate(3px ,1px) rotate (-1deg); -o-transform: translate(3px ,1px) rotate (-1deg); }
+  80%{ transform: translate(-1px ,-1px) rotate(1deg); -webkit-transform: translate(-1px ,-1px) rotate(1deg); -moz-transform: translate(-1px ,-1px) rotate(1deg); -ms-transform: translate(-1px ,-1px) rotate(1deg); -o-transform: translate(-1px ,-1px) rotate(1deg); }
+  90%{ transform: translate(1px ,2px) rotate(0deg); -webkit-transform: translate(1px ,2px) rotate(0deg); -moz-transform: translate(1px ,2px) rotate(0deg); -ms-transform: translate(1px ,2px) rotate(0deg); -o-transform: translate(1px ,2px) rotate(0deg); }
+  100%{ transform: translate(1px ,-2px) rotate(-1deg); -webkit-transform:; -moz-transform:; -ms-transform:; -o-transform:; }
+}
+
+.header-content h2{
+  color: var(--color-secondary);
+  font-family: var(--font-primary);
+  font-size: 4.0625rem;
+}
+.header-content p{
+  font-size: 1rem;
+color: #4f4f5a;
+/* margin top , margin bottom */
+margin-block: 1.25rem;
+line-height: 1.6 ;
+}
+
+header .buttons-groub {
+  display: flex;
+  align-items: center ;
+  gap: 1.25rem ;
+}
+
+header .video-btn{
+  display: flex;
+  align-items: center;
+  transition: color var(--animation-duration);
+  -webkit-transition: color var(--animation-duration);
+  -moz-transition: color var(--animation-duration);
+  -ms-transition: color var(--animation-duration);
+  -o-transition: color var(--animation-duration);
+}
+
+header .video-btn:hover {
+  color: var(--color-primary);
+ 
+}
+
+.video-btn .icon{
+  width: 3.4375rem;
+  height: 3.4375rem;
+  background-image: linear-gradient(to right, red 0% 50%,transparent 50% 100%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.video-btn .icon::before {
+  content: '';
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #fff;
+  border-radius: inherit;
+  position: absolute;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  -ms-border-radius: inherit;
+  -o-border-radius: inherit;
+}
+
+.video-btn .icon i {
+  z-index: 9;
+} 
