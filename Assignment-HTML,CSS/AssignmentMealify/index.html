@@ -18,10 +18,41 @@
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <!-- style Sheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!--Dark mode style Sheet -->
+    <link rel="stylesheet" href="./assets/css/dark-mode.css" />
     <!-- media Sheet -->
     <link rel="stylesheet" href="./assets/css/media.css" />
   </head>
   <body>
+    <!--  Navbar -->
+    <nav>
+      <div class="container">
+        <h1 class="logo">Mealify</h1>
+        <ul>
+          <li>
+            <a href="#home" class="home-link">Home</a>
+          </li>
+          <li>
+            <a href="#chefs" class="chefs-link">Chefs</a>
+          </li>
+          <li>
+            <a href="#gallery" class="gallery-link">Gallery</a>
+          </li>
+          <li>
+            <a href="#contact" class="contact-link">Contact</a>
+          </li>
+        </ul>
+        <div class="mode">
+          <label for="mode">
+            <i class="fa-regular fa-sun light"></i>
+          </label>
+          <label for="mode">
+            <i class="fa-solid fa-moon dark"></i>
+          </label>
+          <input type="checkbox" id="mode" hidden aria-hidden />
+        </div>
+      </div>
+    </nav>
     <!--  header -->
     <header class="home section-bg" id="home">
       <div class="container">

@@ -51,7 +51,7 @@ body {
 a,
 span {
   display: inline-block;
-  color: black;
+  color: var(--color-default);
 }
 
 a {
@@ -140,7 +140,108 @@ ul {
  --hover-color:var(--color-light);
 }
 
-/* HEADER */
+/************************** Navbar */
+    
+nav{
+  background-color: var(--color-light);
+}
+
+nav .container{
+  --padding :25px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+nav ul li a{
+ font-size: 17px;
+ font-weight: 600;
+ color: var(--color-tertiary);
+ position: relative;
+ transition: color var(--animation-duration) ;
+ -webkit-transition: color var(--animation-duration) ;
+ -moz-transition: color var(--animation-duration) ;
+ -ms-transition: color var(--animation-duration) ;
+ -o-transition: color var(--animation-duration) ;
+}
+
+nav ul li a::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2.5px;
+  left: 0;
+  bottom: -3px;
+  background-color: var(--color-primary);
+  transition: width var(--animation-duration);
+  -webkit-transition: width var(--animation-duration);
+  -moz-transition: width var(--animation-duration);
+  -ms-transition: width var(--animation-duration);
+  -o-transition: width var(--animation-duration);
+}
+nav ul li a:hover{
+  color: #000;
+}
+
+nav ul li a:hover::before{
+  width: 100%;
+}
+nav .logo{
+  font-size: 30px;
+  font-family: var(--font-primary);
+}
+nav .logo::after{
+  content: ".";
+  color: var(--color-primary);
+}
+.mode i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.mode .light{
+  display: none;
+}
+body:not(:has(:target)) .home-link,
+body:has(.home:target) .home-link,
+body:has(.chefs:target) .chefs-link,
+body:has(.gallery:target) .gallery-link,
+body:has(.contact:target) .contact-link{
+
+  color: #000;
+}
+
+body:not(:has(:target)) .home-link::before,
+body:has(.home:target) .home-link::before,
+body:has(.chefs:target) .chefs-link::before,
+body:has(.gallery:target) .gallery-link::before,
+body:has(.contact:target) .contact-link::before{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *******************************************************HEADER */
 header .container{
   display: flex;
   flex-wrap: wrap;
@@ -174,7 +275,7 @@ header .container picture img:hover {
   70%{ transform: translate(3px ,1px) rotate (-1deg); -webkit-transform: translate(3px ,1px) rotate (-1deg); -moz-transform: translate(3px ,1px) rotate (-1deg); -ms-transform: translate(3px ,1px) rotate (-1deg); -o-transform: translate(3px ,1px) rotate (-1deg); }
   80%{ transform: translate(-1px ,-1px) rotate(1deg); -webkit-transform: translate(-1px ,-1px) rotate(1deg); -moz-transform: translate(-1px ,-1px) rotate(1deg); -ms-transform: translate(-1px ,-1px) rotate(1deg); -o-transform: translate(-1px ,-1px) rotate(1deg); }
   90%{ transform: translate(1px ,2px) rotate(0deg); -webkit-transform: translate(1px ,2px) rotate(0deg); -moz-transform: translate(1px ,2px) rotate(0deg); -ms-transform: translate(1px ,2px) rotate(0deg); -o-transform: translate(1px ,2px) rotate(0deg); }
-  100%{ transform: translate(1px ,-2px) rotate(-1deg); -webkit-transform:; -moz-transform:; -ms-transform:; -o-transform:; }
+  100%{ transform: translate(1px ,-2px) rotate(-1deg); -webkit-transform: translate(1px ,-2px) rotate(-1deg); -moz-transform: translate(1px ,-2px) rotate(-1deg); -ms-transform: translate(1px ,-2px) rotate(-1deg); -o-transform: translate(1px ,-2px) rotate(-1deg); }
 }
 
 .header-content h2{
@@ -214,7 +315,7 @@ header .video-btn:hover {
 .video-btn .icon{
   width: 3.4375rem;
   height: 3.4375rem;
-  background-image: linear-gradient(to right, red 0% 50%,transparent 50% 100%);
+  background-image: linear-gradient(to right, var(--color-primary) 0% 50%,transparent 50% 100%);
   border-radius: 50%;
   -webkit-border-radius: 50%;
 -moz-border-radius: 50%;
@@ -230,7 +331,7 @@ header .video-btn:hover {
   content: '';
   width: 2.5rem;
   height: 2.5rem;
-  background-color: #fff;
+  background-color: var(--color-light);
   border-radius: inherit;
   position: absolute;
   -webkit-border-radius: inherit;
