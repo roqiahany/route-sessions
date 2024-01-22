@@ -105,3 +105,15 @@
     flex-direction: column;
   }
 }
+
+/* ! chefs */
+@media screen and (max-width: 992px) {
+  .chefsCards .card {
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+}
+@media screen and (max-width: 768px) {
+  .chefsCards .card {
+    width: 100%;
+  }
+}

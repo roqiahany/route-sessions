@@ -140,6 +140,24 @@ ul {
  --hover-color:var(--color-light);
 }
 
+.mainTitle {
+  margin-bottom: 1.25rem ;
+  text-align: center;
+}
+.mainTitle h2{
+  font-size: .875rem;
+  text-transform: uppercase;
+  color: var(--color-tertiary);
+  font-weight: 400;
+}
+.mainTitle span{
+  color: var(--color-primary);
+}
+.mainTitle p{
+  font-size: 3.125rem;
+  font-family: var(--font-primary);
+}
+
 /************************** Navbar */
     
 nav{
@@ -383,4 +401,114 @@ header .video-btn:hover {
 .icon-menu{
   display: none;
   font-size: 26px;
+}
+
+/* ****************************************CHEFS */
+.chefsCards{
+  padding-block: 1.25rem;
+  --gap :1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.chefsCards .card{
+  width: calc(calc(100% - var(--gap) * 2) / 3);
+  /*background-color: aqua;
+  */border-radius:.625rem ;
+  -webkit-border-radius:.625rem ;
+  -moz-border-radius:.625rem ;
+  -ms-border-radius:.625rem ;
+  -o-border-radius:.625rem ;
+  overflow: hidden;
+  box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, .2);
+  transition: transform var(--animation-duration);
+  -webkit-transition: transform var(--animation-duration);
+  -moz-transition: transform var(--animation-duration);
+  -ms-transition: transform var(--animation-duration);
+  -o-transition: transform var(--animation-duration);
+  position: relative;
+  /* background-color: var(--color-light); */
+  background-color: #000;
+}
+.chefsCards .card:hover {
+  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+}
+
+.chefsCards .card img{
+  width: 100%;
+}
+
+.chefsCards .card:hover .socialBox {
+  right: 20px;
+  transition: right var(--animation-duration) var(--animation-duration);
+
+}
+
+.card picture {
+  position: relative;
+}
+
+.card picture::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3.4375rem;
+  bottom: -0.125rem;
+  left: 0;
+  right: 0;
+  background-image: url(../images/wave.svg);
+  background-repeat:repeat-x ;
+}
+
+.chefsCards .card .cardContent{
+  padding: .625rem 1.5625rem 1.5625rem
+  ;
+  text-align: center;
+}
+.cardContent h3{
+  font-size: 1.25rem;
+}
+.cardContent span{
+  margin-block:10px ;
+  color: var(--color-tertiary);
+}
+.cardContent p{
+  font-style: italic;
+  color: var(--color-tertiary);
+}
+
+.card .socialBox{
+  background-color: #ffffff4d;
+  position: absolute;
+  right: -100px;
+  top: 2.5rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.card .socialBox a {
+  padding: .625rem;
+}
+
+.card .socialBox a i:hover {
+color: #37373fe6;
+}
+.card .socialBox a i {
+  font-size: 20px;
+  color: #37373f66;
+  transition: color var(--animation-duration);
+  -webkit-transition: color var(--animation-duration);
+  -moz-transition: color var(--animation-duration);
+  -ms-transition: color var(--animation-duration);
+  -o-transition: color var(--animation-duration);
 }

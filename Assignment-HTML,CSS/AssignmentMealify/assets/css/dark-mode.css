@@ -14,6 +14,13 @@
   --color-light-gray: #252525;
 }
 
+body:has(.mode input:checked) {
+  background-color: rgb(25, 22, 22);
+}
+
+body:has(.mode input:checked) .card picture::before {
+  background-image: url(../images/wave\ dark.svg);
+}
 body:not(:has(:target)):has(.mode input:checked) .home-link,
 body:has(.home:target):has(.mode input:checked) .home-link,
 body:has(.chefs:target):has(.mode input:checked) .chefs-link,
