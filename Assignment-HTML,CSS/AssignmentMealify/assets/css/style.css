@@ -144,6 +144,16 @@ ul {
     
 nav{
   background-color: var(--color-light);
+  position: fixed;
+  left: 0;
+top: 0;
+width: 100%;
+z-index: 9999;
+}
+
+body:has(.nav-linkes:target) nav{
+  height: 100vh;
+  background-color: #fff9;
 }
 
 nav .container{
@@ -157,6 +167,18 @@ nav .container{
 nav ul {
   display: flex;
   gap: 30px;
+  transition: transform var(--animation-duration);
+  -webkit-transition: transform var(--animation-duration);
+  -moz-transition: transform var(--animation-duration);
+  -ms-transition: transform var(--animation-duration);
+  -o-transition: transform var(--animation-duration);
+}
+body:has(.nav-linkes:target) nav ul{
+  transform: translate(0);
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
 }
 nav ul li a{
  font-size: 17px;
@@ -190,6 +212,13 @@ nav ul li a:hover{
 
 nav ul li a:hover::before{
   width: 100%;
+}
+
+nav ul li .close-icon {
+  display: none;
+}
+nav ul li a.close-icon{
+  font-size: 25px;
 }
 nav .logo{
   font-size: 30px;
@@ -241,12 +270,19 @@ body:has(.contact:target) .contact-link::before{
 
 
 
-/* *******************************************************HEADER */
+/* ****************************************HEADER */
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 header .container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 85px;
 }
 
 header .container > * {
@@ -343,3 +379,8 @@ header .video-btn:hover {
 .video-btn .icon i {
   z-index: 9;
 } 
+
+.icon-menu{
+  display: none;
+  font-size: 26px;
+}

@@ -2,6 +2,42 @@
 :root {
   font-size: 12px;
 }
+
+/* ! navbar */
+@media screen and (max-width: 1200px) {
+  .icon-menu {
+    display: block;
+  }
+
+  nav ul {
+    transform: translateX(100%);
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    width: 350px;
+    flex-direction: column;
+    height: 100%;
+    padding-inline: 10px;
+    gap: 0;
+    /* to disappear */
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+  nav ul li {
+    padding-block: 20px;
+  }
+  nav ul li .close-icon {
+    display: block;
+    text-align: right;
+  }
+  nav div.mode {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
 /* ! container */
 @media screen and (min-width: 1400px) {
   .container {
@@ -38,7 +74,7 @@
 
 /* ! header */
 @media screen and (min-width: 1200px) {
-  header .container {
+  header {
     min-height: 100vh;
   }
 }
