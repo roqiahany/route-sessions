@@ -570,3 +570,111 @@ top: 0;
   margin-top: 10px;
   text-align: center;
 }
+
+/* ! Contact */
+
+.contact iframe {
+  width: 100%;
+  height: 350px;
+}
+.contact .contactMeans{
+  display: flex;
+  flex-wrap: wrap;
+  --gap :10px
+  ;
+  gap: var(--gap);
+  margin-block: 20px;
+}
+
+.contactMeans > div {
+  width: calc(calc(100% - var(--gap)) / 2);
+  background-color:hsl(var(--light-hue), var(--light-saturation), calc( var(--light-lightness) - 5%));
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact .contactMeans .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--color-primary);
+flex-shrink: 0;
+}
+.contact .contactMeans .icon i {
+  font-size: 20px;
+  color: var(--color-light);
+}
+.contact .contactMeans  h3{
+  color: #7d7d7d;
+  font-size: 20px;
+  font-weight: 700px;
+  margin-bottom: 5px;
+}
+
+.contact .contactMeans  h3 + * {
+  font-size: 17px;
+}
+
+.contact form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  --gap:10px;
+  gap: var(--gap);
+  background-color: var(--color-light);
+  box-shadow: 0 0 30px #00000014;
+  padding: 20px;
+}
+.contact form > *:not(button) {
+  width: 100%;
+}
+form .inputGroub {
+  display: flex;
+  flex-wrap: wrap;
+
+gap: var(--gap);
+}
+
+form .inputGroub input {
+  width:calc( calc(100% - var(--gap)) / 2);
+}
+
+.contact input ,
+.contact textarea{
+    font-family: inherit;
+    padding: 15px;
+    border: 2px solid hsl(var(--light-hue),   calc(var(--light-saturation) + 10%),    calc( var(--light-lightness) - 10%));
+    transition:border-color var(--animation-duration) ;
+    -webkit-transition:border-color var(--animation-duration) ;
+    -moz-transition:border-color var(--animation-duration) ;
+    -ms-transition:border-color var(--animation-duration) ;
+    -o-transition:border-color var(--animation-duration) ;
+}
+
+.contact :is(input, textarea):focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.contact textarea {
+  resize: vertical;
+  max-height: 350px;
+  min-height: 150px;
+}
+
+.contact .btn-main {
+  --background-color:var(--color-primary);
+  --border-radius: 100vh ;
+  --font-size: 15px;
+  --padding: 15px 30px;
+  --margin :20px;
+ }
