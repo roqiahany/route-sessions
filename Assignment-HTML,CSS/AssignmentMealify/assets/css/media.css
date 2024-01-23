@@ -117,3 +117,55 @@
     width: 100%;
   }
 }
+
+/* ! gallery */
+@media screen and (max-width: 1400px) {
+  .gallery .galleryImg {
+    height: 1025px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery .galleryImg {
+    height: 860px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .gallery .galleryImg {
+    height: 1480px;
+  }
+  .galleryImg picture {
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+  .pizza {
+    order: 1;
+  }
+  .burger {
+    order: 2;
+  }
+  .fried {
+    order: 6;
+  }
+  .omelette {
+    order: 4;
+  }
+  .kofta {
+    order: 7;
+  }
+  .pizza-slices {
+    order: 6;
+  }
+  .stack {
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery .galleryImg {
+    height: auto;
+  }
+  .galleryImg picture {
+    width: 100%;
+  }
+}
