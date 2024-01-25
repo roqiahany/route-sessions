@@ -183,3 +183,23 @@
     width: 100%;
   }
 }
+
+/* ! footer */
+@media screen and (max-width: 1200px) {
+  footer :is(.about, .contactDetails) {
+    width: calc(calc(100% - var(--gap) * 2) / 2);
+    order: 1;
+  }
+
+  footer .subscription {
+    width: 100%;
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer :is(.about, .contactDetails, .subscription) {
+    width: 100%;
+    order: 0;
+  }
+}
