@@ -1,0 +1,171 @@
+.bg-nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9;
+}
+
+.home {
+  background-image: url(../img/hero-bg.jpg);
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* default */
+  /* background-attachment: scroll; */
+}
+
+.homeLayer {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layerContent {
+  color: #fff;
+  text-align: center;
+}
+
+.home .layerContent h1 {
+  font-size: 65px;
+}
+.home .layerContent .typingClass {
+  font-size: 26px;
+}
+
+.home .layerContent .typingClass::after {
+  content: '';
+  /*animation-name: typingSkill;
+  */
+  animation: typingSkill 7s infinite;
+  -webkit-animation: typingSkill 7s infinite;
+}
+
+@keyframes typingSkill {
+  0% {
+    content: '|';
+  }
+  2% {
+    content: 'D|';
+  }
+  4% {
+    content: 'De|';
+  }
+  6% {
+    content: 'Dev|';
+  }
+  8% {
+    content: 'Deve|';
+  }
+  10% {
+    content: 'Devel|';
+  }
+  12% {
+    content: 'Develo|';
+  }
+  14% {
+    content: 'Develop|';
+  }
+  16% {
+    content: 'Develope|';
+  }
+  18% {
+    content: 'Developer|';
+  }
+  30% {
+    content: 'Developer|';
+  }
+  32% {
+    content: 'Develope|';
+  }
+  34% {
+    content: 'Develop|';
+  }
+  36% {
+    content: 'Develo|';
+  }
+  38% {
+    content: 'Devel|';
+  }
+  40% {
+    content: 'Deve|';
+  }
+  42% {
+    content: 'Dev|';
+  }
+  44% {
+    content: 'De|';
+  }
+  46% {
+    content: 'D|';
+  }
+  48% {
+    content: '|';
+  }
+
+  50% {
+    content: '';
+  }
+  52% {
+    content: '|';
+  }
+  54% {
+    content: 'D|';
+  }
+  56% {
+    content: 'De|';
+  }
+  58% {
+    content: 'Des|';
+  }
+  60% {
+    content: 'Desi|';
+  }
+  62% {
+    content: 'Desin|';
+  }
+  64% {
+    content: 'Desing|';
+  }
+  66% {
+    content: 'Desinge|';
+  }
+  68% {
+    content: 'Desinger|';
+  }
+  70% {
+    content: 'Desinge|';
+  }
+  72% {
+    content: 'Desing|';
+  }
+  74% {
+    content: 'Desin|';
+  }
+  76% {
+    content: 'Desi|';
+  }
+  78% {
+    content: 'Des|';
+  }
+  80% {
+    content: 'De|';
+  }
+  82% {
+    content: 'D|';
+  }
+  84% {
+    content: '|';
+  }
+  86% {
+    content: '';
+  }
+}
